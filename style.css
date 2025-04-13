@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:"Comic Sans MS",sans-serif;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+    gap:20px;
+}
+
+.container .card{
+    padding:15px;
+    border:1.5px solid black;
+    /* text-align: center; */
+    border-radius:5px;
+}
+
+.img{
+    /* padding:px; */
+    border:1px solid whitesmoke;
+    border-radius:6px;
+    transition: .5s;
+}
+
+.img img{
+    width:250px;
+    height:280px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.img:hover img{
+    scale: 1.05;
+}
+
+.name{
+    /* border:1px solid yellowgreen; */
+    background-color:whitesmoke;
+    font-weight: bold;
+    padding:3px;
+    width:100%;
+    border-radius:4px;
+    margin-top:10px;
+    /* color: yellowgreen; */
+    text-align: center;
+}
+
+.des{
+    /* border:1px solid yellowgreen; */
+    padding:3px;
+    width:100%;
+    border-radius:4px;
+    background:whitesmoke;
+    margin-top:10px;
+    font-weight: bold;
+    color: yellowgreen;
+    text-align: center;
+}
+
+.price{
+    /* border:1px solid yellowgreen; */
+    padding:3px;
+    width:100%;
+    border-radius:4px;
+    margin-top:10px;
+    font-weight: bold;
+    background:whitesmoke;
+    color:yellowgreen;
+    text-align: center;
+}
+
+
+button{
+    width:100%;
+    background:rgb(157, 226, 20);
+    border:none;
+    outline: none;
+    font-size:20px;
+    font-weight: bold;
+    margin-top:10px;
+    border-radius:5px;
+    padding:5px;
+    cursor: pointer;
+    transition:.4s;
+    text-align: center;
+}
+
+button:hover{
+    background-color:rgb(121, 153, 56);
+}
+
+span{
+    padding:4px;
+    background-color: yellow;
+    color:black;
+    font-weight: bold;
+    border-radius:6px;
+    position: absolute;
+    z-index:1000;
+    margin: 10px;
+}
+
+.heart{
+    padding:4px;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    border-radius:6px;
+    position: absolute;
+    z-index:1000;
+    margin: 10px;
+    display: flex;
+    margin-left:220px;
+    cursor: pointer;
+}
+.heart i{
+    color:red;
+}
+
+@media (max-width:800px){
+    .container{
+        display:block;
+        padding-left:10px;
+        padding-right: 10px;
+        padding-bottom:50px;
+    }
+
+    .card{
+        margin-top:30px;
+    }
+
+    .heart{
+        margin-right:20px !important;
+        border-radius:3px !important;
+        margin-top:7px !important;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .container .card {
+        width: 45%;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heart {
+        margin-left: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container .card {
+        width: 90%;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heart {
+        margin-left: auto;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .name,
+    .des,
+    .price,
+    button {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    span, .heart {
+        margin: 5px;
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+}
+
+
+/* #crd{
+    margin-bottom:60px;
+} */
